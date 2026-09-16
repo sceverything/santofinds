@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=64", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "santofinds"
+version = "0.2.0"
+description = "Python client for SantoFinds people-search and lookup services"
+readme = "README.md"
+license = "MIT"
+authors = [{ name = "SantoFinds Contributors" }]
+requires-python = ">=3.9"
+dependencies = ["requests>=2.31.0"]
+keywords = ["people-search", "people-lookup", "reverse-phone-lookup", "address-lookup", "apify", "python-sdk"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+]
+
+[project.urls]
+Homepage = "https://github.com/sceverything/santofinds"
+
+[tool.setuptools.packages.find]
+include = ["santofinds*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
